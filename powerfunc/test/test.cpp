@@ -37,3 +37,15 @@ TEST(powerTest, testfor2power100_32768)
     double exp = 32768;
     ASSERT_EQ(power(2,15), exp);
 }
+
+TEST(powerTest, testfor2powerminus1)
+{
+    double exp = 0.5;
+    ASSERT_EQ(power(2, -1), exp);
+}
+
+TEST(powerTest, testfor2powerminus4)
+{
+    double exp = 0.0625;
+    ASSERT_EQ(power(2, -4), exp);
+}

@@ -13,6 +13,11 @@ double power(int x, int n)
        power = power*x;
        n--;
     }
+    while(n<=-1)
+    {
+        power = power/x;
+        n++;
+    }
     return power;
     
 }
